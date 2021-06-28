@@ -1,0 +1,15 @@
+.Parallax__background {
+  background-color: #e5e5f7;
+  opacity: 1;
+  background: linear-gradient(135deg, #444cf755 25%, transparent 25%) -20px 0/
+      40px 40px,
+    linear-gradient(225deg, #444cf7 25%, transparent 25%) -20px 0/ 40px 40px,
+    linear-gradient(315deg, #444cf755 25%, transparent 25%) 0px 0/ 40px 40px,
+    linear-gradient(45deg, #444cf7 25%, #e5e5f7 25%) 0px 0/ 40px 40px;
+  height: 100%;
+}
+
+.Parallax {
+  height: 500px;
+  width: 100%;
+}

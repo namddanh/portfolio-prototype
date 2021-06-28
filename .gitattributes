@@ -1,0 +1,4 @@
+../src/videos/patricktomasso.mp4 filter=lfs diff=lfs merge=lfs -text
+.../src/videos/patricktomasso.mp4 filter=lfs diff=lfs merge=lfs -text
+.../src/videos/fence-blurred.mp4.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text

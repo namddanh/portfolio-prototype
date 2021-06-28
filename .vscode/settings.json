@@ -1,0 +1,4 @@
+{
+  // Property is ignored due to the display. E.g. with `display: inline`, the `width`, `height`, `margin-top`, `margin-bottom`, and `float` properties have no effect.
+  "css.customData": ["./.vscode/custom.css-data.json"]
+}

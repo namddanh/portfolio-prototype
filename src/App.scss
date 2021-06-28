@@ -1,0 +1,52 @@
+// @import-normalize; /* bring in normalize.css styles */
+
+// .App {
+//   text-align: center;
+// }
+
+// .App-logo {
+//   height: 30vmin;
+//   pointer-events: none;
+// }
+
+// @media (prefers-reduced-motion: no-preference) {
+//   .App-logo {
+//     animation: App-logo-spin infinite 5s linear;
+//   }
+// }
+
+// @keyframes App-logo-spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
+
+:root {
+  --backgroundColor: rgba(246, 241, 209);
+  --colorShadeA: rgb(80, 101, 130);
+  --colorShadeB: rgb(89, 115, 151);
+  --colorShadeC: rgb(130, 153, 185);
+  --colorShadeD: rgb(175, 192, 216);
+  --colorShadeE: rgb(230, 233, 238);
+  --colorShadeF: rgb(11, 11, 11);
+
+  --colorShadeBlue: rgb(0, 119, 181);
+  --colorShadeHoverBlue: rgb(1, 107, 163);
+  --colorShadeDarkBlue: rgb(0, 62, 94);
+  --colorShadeWhite: rgb(255, 255, 255);
+  --colorShadeShadow: rgb(33, 33, 33, 1);
+
+  --colorShadeGrey: rgb(80, 80, 80);
+  --colorShadeHoverGrey: rgb(75, 75, 75);
+  --colorShadeDarkGrey: rgb(56, 56, 56);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Encode Sans Expanded", sans-serif;
+}
