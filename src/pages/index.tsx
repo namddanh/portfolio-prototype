@@ -28,7 +28,6 @@ const Home = () => {
       <Portfolio />
       <Projects />
       <Footer />
-      <div>Hello World</div>
     </React.Fragment>
   );
 };
