@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SkillsBar from "./SkillsBar";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import {
   SkillsSection,
   SkillsContainer,
@@ -11,8 +13,12 @@ import {
 } from "./SkillsChartElements";
 
 const SkillsChart = () => {
+  useEffect(() => {
+    Aos.init({ duration: 800 });
+  }, []);
+
   return (
-    <SkillsSection id="skills" className="fade-in">
+    <SkillsSection id="skills" data-aos="fade-right">
       <SkillsContainer>
         <SkillsHeader>
           Skills

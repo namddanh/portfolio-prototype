@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Loader from "../Loader";
 import ControlPanel from "./ControlPanel";
 import pdfFile from "../../images/resume/NamDanh.pdf";
+import Aos from "aos";
 import {
   PortfolioContainer,
   PortfolioWrapper,
@@ -17,6 +18,10 @@ const Portfolio = () => {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
   const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
@@ -47,7 +52,7 @@ const Portfolio = () => {
   }
 
   return (
-    <PortfolioContainer id="portfolio">
+    <PortfolioContainer id="portfolio" data-aos="fade-right">
       <PortfolioWrapper id="ResumeWrapper">
         <Loader isLoading={isLoading} />
         <ResumeDisplayAndController className="d-flex flex-column align-items-center">

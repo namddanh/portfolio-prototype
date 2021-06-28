@@ -3,10 +3,7 @@ import styled from "styled-components";
 export const PortfolioContainer = styled.section`
   //   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
   background-color: #151515;
-
-  @media screen and (max-width: 768px) {
-    padding: 100px 0;
-  }
+  margin-bottom: 200px;
 `;
 
 export const PortfolioWrapper = styled.div`

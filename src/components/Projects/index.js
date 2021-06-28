@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Enso from "../../images/projects/ENSO.jpg";
+import Aos from "aos";
 import {
   ProjectsContainer,
   ProjectsH1,
@@ -11,8 +12,12 @@ import {
 } from "./ProjectElements";
 
 const Projects = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
-    <ProjectsContainer id="projects">
+    <ProjectsContainer id="projects" data-aos="fade-right">
       <ProjectsH1>My Projects</ProjectsH1>
       <ProjectsWrapper>
         <ProjectsCard>

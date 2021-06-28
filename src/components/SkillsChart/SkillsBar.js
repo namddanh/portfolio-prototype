@@ -16,7 +16,7 @@ const SkillsBar = ({
       width: `${done}%`,
     };
     setStyle(newStyle);
-  }, 1000);
+  }, 3000);
 
   return (
     <SkillsBarOuter>
