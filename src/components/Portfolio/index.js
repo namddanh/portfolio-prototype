@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Loader from "../Loader";
+// import Loader from "../Loader";
 import ControlPanel from "./ControlPanel";
 import pdfFile from "../../images/resume/NamDanh.pdf";
 import Aos from "aos";
@@ -17,7 +17,7 @@ const Portfolio = () => {
   const [scale, setScale] = useState(1.0);
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -25,7 +25,7 @@ const Portfolio = () => {
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
-    setIsLoading(false);
+    // setIsLoading(false);
   }
 
   function styleCanvasAndLayers() {
@@ -54,7 +54,6 @@ const Portfolio = () => {
   return (
     <PortfolioContainer id="portfolio" data-aos="fade-right">
       <PortfolioWrapper id="ResumeWrapper">
-        <Loader isLoading={isLoading} />
         <ResumeDisplayAndController className="d-flex flex-column align-items-center">
           <ControlPanel
             fileUrl={pdfFile}

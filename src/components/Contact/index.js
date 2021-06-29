@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Joi from "joi-browser";
+import Aos from "aos";
 import {
   Container,
   FormWrap,
@@ -130,12 +131,27 @@ export default class Contact extends Component {
     }, 3000);
   };
 
+  componentDidMount() {
+    Aos.init({
+      duration: 1000,
+    });
+  }
+
   render() {
     const { errors } = this.state;
 
     return (
       <React.Fragment>
-        <Container>
+        <Container
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+        >
           <BackButtonContainer>
             <BackButton to="/">
               <BackButtonSpan>Go back</BackButtonSpan>
