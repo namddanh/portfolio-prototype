@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 // import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 
 export const HeroContainer = styled.section`
@@ -71,12 +71,41 @@ export const HeroContent = styled.div`
   align-items: center;
 `;
 
-export const HeroH1 = styled.h1`
-  color: #fff;
-  font-size: 48px;
-  text-align: center;
+const animate = keyframes`
+  0% {
+    background-position: 0
+  }
+  50% {
+    background-position: 375px
+  }
+  100% {
+    background-position: 650px
+  }
+`;
 
-  @media screen and (max-width: 768px) {
+export const HeroH1 = styled.h1`
+  // color: #fff;
+  // font-size: 48px;
+  // text-align: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -225%);
+  padding: 12px 48px;
+  color: #ffffff;
+  background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: ${animate} 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 48px;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: @media screen and (max-width: 768px) {
     font-size: 40px;
   }
 

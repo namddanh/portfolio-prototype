@@ -69,11 +69,11 @@ const HeroSection = () => {
         className="hero-content"
         style={{ transform: `translateY(${offsetY * 0.1}px)` }}
       >
-        <HeroH1>Hello my name is Nam</HeroH1>
-        <HeroP>
+        <HeroH1>Welcome to my website!</HeroH1>
+        {/* <HeroP>
           I'm a Front-End web developer with commercial experience creating
           successful websites.
-        </HeroP>
+        </HeroP> */}
       </HeroContent>
     </HeroContainer>
   );
