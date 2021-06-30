@@ -6,17 +6,9 @@ import { LoadingContainer } from "./LoadingElements";
 const Loading = ({ isLoading }) => {
   if (!isLoading) return null;
 
-  const loaderStyle = {
-    margin: 0,
-    position: "absolute",
-    top: "50%",
-    right: "40%",
-    transform: "translateY(-50%)",
-  };
-
   return (
     <LoadingContainer>
-      <Loader style={loaderStyle} type="CradleLoader" height={80} width={80} />
+      <Loader type="CradleLoader" height={80} width={80} />
     </LoadingContainer>
   );
 };
