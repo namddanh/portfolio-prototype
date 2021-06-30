@@ -60,7 +60,7 @@ const About = () => {
             <AboutTitleBorder className="about-border" />
           </AboutTitle>
           <AboutText>
-            Hi i'm Nam, a full-stack developer that is based in Mississauga, ON.
+            Hi i'm Nam, a front-end developer that is based in Mississauga, ON.
             <br />
             <br />
             As a graduate from the Computer Science program at Ryerson
