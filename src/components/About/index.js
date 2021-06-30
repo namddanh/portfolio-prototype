@@ -16,42 +16,32 @@ const About = () => {
   const sectionAboutRef = useRef(null);
 
   const handleScroll = () => {
-    // const content = document.querySelector(".content");
-    // const image_container = document.querySelector(".imgContainer");
     const shadow = document.querySelector(".shadow-effect");
     const opacity = document.querySelectorAll(".opacity");
     const about_border = document.querySelector(".about-border");
 
     let scroll = window.pageYOffset;
 
-    let sectionAboutHeight = sectionAboutRef.current.clientHeight;
-    let sectionY = sectionAboutRef.current.getBoundingClientRect();
+    if (sectionAboutRef.current != null) {
+      let sectionAboutHeight = sectionAboutRef.current.clientHeight;
+      let sectionY = sectionAboutRef.current.getBoundingClientRect();
 
-    shadow.style.height = `${scroll * 0.5 + 300}px`;
+      shadow.style.height = `${scroll * 0.5 + 300}px`;
 
-    opacity.forEach((element) => {
-      element.style.opacity = scroll / (sectionY.top + sectionAboutHeight);
-    });
+      opacity.forEach((element) => {
+        element.style.opacity = scroll / (sectionY.top + sectionAboutHeight);
+      });
 
-    about_border.style.width = `${
-      (scroll / (sectionY.top + sectionAboutHeight)) * 30
-    }%`;
+      about_border.style.width = `${
+        (scroll / (sectionY.top + sectionAboutHeight)) * 30
+      }%`;
 
-    if (sectionY.top < -300) {
-      about_border.style.display = "none";
-    } else {
-      about_border.style.display = "block";
+      if (sectionY.top < -300) {
+        about_border.style.display = "none";
+      } else {
+        about_border.style.display = "block";
+      }
     }
-
-    // content.style.transform = `translateY(${
-    //   (scroll / (sectionAboutHeight + sectionY.top)) * 50 - 50
-    // }px)`;
-
-    // image_container.style.transform = `translateY(${
-    //   (scroll / (sectionAboutHeight + sectionY.top)) * -50 + 50
-    // }px)`;
-
-    // hero_content.style.opacity = -scroll / (heroContainerHeight / 2) + 1;
   };
 
   useEffect(() => {
@@ -66,17 +56,21 @@ const About = () => {
       <AboutContainer>
         <AboutContent className="content opacity">
           <AboutTitle>
-            About
+            About Me
             <AboutTitleBorder className="about-border" />
           </AboutTitle>
           <AboutText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Hi i'm Nam, a full-stack developer that is based in Mississauga, ON.
+            <br />
+            <br />
+            As a graduate from the Computer Science program at Ryerson
+            University with a minor in Software Engineering, I strive to be
+            creative in everything I do while also finding simple solutions to
+            every new task. I have found a liking to web development from
+            building web applications from the ground up while also ensuring the
+            user interface is structurally-sound and aesthetically pleasing. I'm
+            naturally curious, outlandishly enthusiastic, and always am
+            improving my craft one problem at a time.
           </AboutText>
         </AboutContent>
         <AboutImageContainer className="imgContainer opacity">

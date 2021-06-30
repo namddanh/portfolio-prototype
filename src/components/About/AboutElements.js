@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const AboutSection = styled.section`
+  height: 1000px;
   width: 100%;
   background-color: #151515;
   position: relative;
@@ -17,6 +18,7 @@ export const ShadowEffect = styled.div`
 `;
 
 export const AboutContainer = styled.div`
+  height: 100%;
   padding-top: 3rem;
   padding-bottom: 3rem;
   display: grid;
@@ -24,10 +26,6 @@ export const AboutContainer = styled.div`
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-
-  > * {
-    margin: 2rem;
-  }
 
   @media (max-width: 850px) {
     grid-template-columns: 1fr;
@@ -62,6 +60,11 @@ export const AboutContainer = styled.div`
 export const AboutContent = styled.div`
   color: #fff;
   opacity: 0;
+  margin-right: 2rem;
+
+  @media (max-width: 850px) {
+    margin: 1rem;
+  }
 `;
 
 export const AboutTitle = styled.h3`
@@ -93,8 +96,23 @@ export const AboutText = styled.p`
 
 export const AboutImageContainer = styled.div`
   opacity: 0;
+  margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 850px) {
+    margin: 1rem;
+  }
 `;
 
 export const AboutImage = styled.img`
   width: 100%;
+
+  @media (max-width: 850px) {
+    width: 50%;
+  }
+
+  @media (max-width: 520px) {
+    width: 100%;
+  }
 `;

@@ -41,18 +41,18 @@ const Footer = () => {
             {/* <SocialLogo to="/" onClick={toggleHome}></SocialLogo> */}
             <SocialIcons>
               <SocialIconLink
-                href="https://www.github.com/namddanh"
-                target="_blank"
-                aria-label="GitHub"
-              >
-                <FaGithub />
-              </SocialIconLink>
-              <SocialIconLink
                 href="https://www.linkedin.com/in/NamDanh"
                 target="_blank"
                 aria-label="Linkedin"
               >
                 <FaLinkedin />
+              </SocialIconLink>
+              <SocialIconLink
+                href="https://www.github.com/namddanh"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <FaGithub />
               </SocialIconLink>
             </SocialIcons>
             <WebsiteRights>© Nam Danh {new Date().getFullYear()}</WebsiteRights>

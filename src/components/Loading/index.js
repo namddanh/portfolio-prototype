@@ -10,7 +10,7 @@ const Loading = ({ isLoading }) => {
     margin: 0,
     position: "absolute",
     top: "50%",
-    right: "45%",
+    right: "40%",
     transform: "translateY(-50%)",
   };
 

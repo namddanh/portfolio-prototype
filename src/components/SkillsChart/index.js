@@ -22,7 +22,7 @@ const SkillsChart = () => {
       <SkillsContainer>
         <SkillsHeader>
           Skills
-          <SkillsHeaderBorder className="skills-border" />
+          {/* <SkillsHeaderBorder className="skills-border" /> */}
         </SkillsHeader>
         <SkillsWrapper>
           <>

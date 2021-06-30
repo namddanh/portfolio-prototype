@@ -216,7 +216,7 @@ export default class Contact extends Component {
             </FormContent>
             <SocialLinkContainer>
               <SocialLinkedin
-                to="//https://www.linkedin.com/in/NamDanh"
+                to="//www.linkedin.com/in/NamDanh"
                 target="_blank"
               >
                 <SocialLinkSpan>
@@ -239,10 +239,7 @@ export default class Contact extends Component {
                   Linkedin
                 </SocialLinkSpan>
               </SocialLinkedin>
-              <SocialGithub
-                to="//https://www.github.com/namddanh"
-                target="_blank"
-              >
+              <SocialGithub to="//www.github.com/namddanh" target="_blank">
                 <SocialLinkSpan>
                   <SocialSvgs
                     class="i-svg"

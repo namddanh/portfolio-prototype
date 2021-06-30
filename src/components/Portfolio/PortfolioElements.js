@@ -4,6 +4,10 @@ export const PortfolioContainer = styled.section`
   //   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
   background-color: #151515;
   margin-bottom: 200px;
+
+  @media (max-width: 850px) {
+    margin-bottom: 0;
+  }
 `;
 
 export const PortfolioWrapper = styled.div`

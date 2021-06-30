@@ -60,7 +60,7 @@ export const Form = styled.form`
   padding: 40px 32px;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgb(0 0 0 / 90%);
-  background: linear-gradient(45deg, rgb(0 0 0 / 60%) 0%, rgb(0 0 0) 100%);
+  background: linear-gradient(45deg, rgb(0 0 0 / 0%) 0%, rgb(0 0 0) 100%);
 
   @media screen and (max-width: 540px) {
     padding: 20px;
@@ -127,14 +127,14 @@ export const FormButton = styled.button`
   vertical-align: middle;
   text-decoration: none;
   font-size: 1.5rem;
-  color: var(--colorShadeA);
+  color: var(--colorShadeWhite);
   font-weight: 700;
   text-transform: uppercase;
   font-family: inherit;
   padding: 0.5em 2em;
-  border: 2px solid var(--colorShadeA);
+  border: 2px solid var(--colorShadeC);
   border-radius: 7px;
-  background: var(--colorShadeE);
+  background: var(--colorShadeC);
   transform-style: preserve-3d;
   transition: all 175ms cubic-bezier(0, 0, 1, 1);
   width: 50%;
@@ -149,15 +149,16 @@ export const FormButton = styled.button`
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--colorShadeC);
+    background: var(--colorShadeA);
     border-radius: inherit;
-    box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.75em 0 0 var(--colorShadeF);
+    box-shadow: 0 0 0 2px var(--colorShadeA), 0 0.75em 0 0 var(--colorShadeF);
     transform: translate3d(0, 0.75em, -1em);
     transition: all 175ms cubic-bezier(0, 0, 1, 1);
   }
 
   &:hover {
-    background: var(--colorShadeD);
+    background: var(--colorShadeB);
+    border: 2px solid var(--colorShadeB);
     transform: translate(0, 0.075em);
 
     &:before {

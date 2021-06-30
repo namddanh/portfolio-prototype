@@ -62,6 +62,7 @@ export const VideoBg = styled.video`
 `;
 
 export const HeroContent = styled.div`
+  top: 30%;
   z-index: 25;
   max-width: 1200px;
   position: absolute;
@@ -69,6 +70,7 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 `;
 
 const animate = keyframes`
@@ -84,14 +86,12 @@ const animate = keyframes`
 `;
 
 export const HeroH1 = styled.h1`
-  // color: #fff;
-  // font-size: 48px;
-  // text-align: center;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -225%);
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -225%);
+  text-align: center;
+  width: 100%;
   padding: 12px 48px;
   color: #ffffff;
   background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
@@ -105,12 +105,10 @@ export const HeroH1 = styled.h1`
   font-size: 48px;
   text-decoration: none;
   white-space: nowrap;
-  font-family: @media screen and (max-width: 768px) {
-    font-size: 40px;
-  }
 
-  @media screen and (max-width: 480px) {
-    font-size: 32px;
+  @media screen and (max-width: 768px) {
+    font-size: 5vw;
+    padding: 0;
   }
 `;
 
@@ -157,6 +155,14 @@ export const ImageMountain3 = styled.img`
 export const ImageSky = styled.img`
   position: absolute;
   bottom: 370px;
+  width: 2000px;
+  right: 0;
+  z-index: 16;
+`;
+
+export const ImageMountain = styled.img`
+  position: absolute;
+  bottom: 0;
   width: 2000px;
   right: 0;
   z-index: 16;
