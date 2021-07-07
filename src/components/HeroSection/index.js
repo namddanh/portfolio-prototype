@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 // import heroImage from "../../images/pexels/pexels-joão-jesus-cut.jpg";
 // import Video from "../../videos/static-video-hs.mp4";
-import mountain1Img from "../../images/parallaxHS/img/mountain1.png";
-import mountain2Img from "../../images/parallaxHS/img/mountain2.png";
-import mountain3Img from "../../images/parallaxHS/img/mountain3.png";
-import skyImg from "../../images/parallaxHS/img/sky.png";
+// import mountain1Img from "../../images/parallaxHS/img/mountain1.png";
+// import mountain2Img from "../../images/parallaxHS/img/mountain2.png";
+// import mountain3Img from "../../images/parallaxHS/img/mountain3.png";
+// import skyImg from "../../images/parallaxHS/img/sky.png";
 import mountainImg from "../../images/parallaxHS/orginal_image/pexels-rizknas.jpg";
 import {
   HeroContainer,

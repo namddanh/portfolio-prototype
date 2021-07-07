@@ -221,7 +221,7 @@ export default class Contact extends Component {
               >
                 <SocialLinkSpan>
                   <SocialSvgs
-                    class="i-svg"
+                    className="i-svg"
                     height="30"
                     version="1.1"
                     width="30"
@@ -242,7 +242,7 @@ export default class Contact extends Component {
               <SocialGithub to="//www.github.com/namddanh" target="_blank">
                 <SocialLinkSpan>
                   <SocialSvgs
-                    class="i-svg"
+                    className="i-svg"
                     height="30"
                     version="1.1"
                     width="30"

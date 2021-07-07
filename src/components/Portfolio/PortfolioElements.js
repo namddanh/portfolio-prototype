@@ -11,7 +11,7 @@ export const PortfolioContainer = styled.section`
 `;
 
 export const PortfolioWrapper = styled.div`
-  background-color: #645662;
+  background-color: #151515;
   border-radius: 5px;
   display: grid;
   z-index: 1;

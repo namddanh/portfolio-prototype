@@ -6,7 +6,7 @@ import {
   SkillsSection,
   SkillsContainer,
   SkillsHeader,
-  SkillsHeaderBorder,
+  // SkillsHeaderBorder,
   SkillsWrapper,
   SkillsH4,
   SkillsPercentage,
