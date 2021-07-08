@@ -30,7 +30,6 @@ export const AboutContainer = styled.div`
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
 
   @media (max-width: 850px) {
     grid-template-columns: 1fr;
