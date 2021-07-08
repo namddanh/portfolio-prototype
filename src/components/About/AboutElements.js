@@ -103,20 +103,18 @@ export const AboutImageContainer = styled.div`
   margin-left: 2rem;
   display: flex;
   justify-content: center;
+  max-width: 500px;
 
   @media (max-width: 850px) {
-    margin: 0rem;
+    margin: 0 auto;
   }
 `;
 
 export const AboutImage = styled.img`
   width: 100%;
+  height: auto;
 
   @media (max-width: 850px) {
-    width: 50%;
-  }
-
-  @media (max-width: 600px) {
     width: 75%;
   }
 
