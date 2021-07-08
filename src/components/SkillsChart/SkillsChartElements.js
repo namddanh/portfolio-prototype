@@ -6,6 +6,10 @@ export const SkillsSection = styled.section`
   position: relative;
   z-index: 0;
   margin-bottom: 200px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 100px;
+  }
 `;
 
 export const SkillsContainer = styled.div`
@@ -149,7 +153,7 @@ export const SkillsBarOuter = styled.div`
 
   &::before,
   &::after {
-    background: linear-gradient(182deg, #151515, #151515, #82ecec);
+    background: linear-gradient(182deg, #151515, #151515, #9c909b);
   }
 `;
 
@@ -164,7 +168,7 @@ const animate = keyframes`
 
 export const SkillsBarInner = styled.div`
   position: relative;
-  background: linear-gradient(to left, #82ecec, #151515);
+  background: linear-gradient(to left, #9c909b, #151515);
   box-shadow: inset 0 0 20px rgba(0, 0, 0, 1);
   color: #fff;
   border-radius: 5px;

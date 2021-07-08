@@ -87,8 +87,6 @@ export default class Contact extends Component {
     this.setState({ errors: errors || {} });
     if (errors) return;
 
-    console.log("Submitted");
-
     // Call the server
     axios
       .post("/api/form", data)

@@ -6,7 +6,6 @@ import {
   SkillsSection,
   SkillsContainer,
   SkillsHeader,
-  // SkillsHeaderBorder,
   SkillsWrapper,
   SkillsH4,
   SkillsPercentage,
@@ -20,10 +19,7 @@ const SkillsChart = () => {
   return (
     <SkillsSection id="skills" data-aos="fade-right">
       <SkillsContainer>
-        <SkillsHeader>
-          Skills
-          {/* <SkillsHeaderBorder className="skills-border" /> */}
-        </SkillsHeader>
+        <SkillsHeader>Skills</SkillsHeader>
         <SkillsWrapper>
           <>
             <SkillsH4>Node.js</SkillsH4>

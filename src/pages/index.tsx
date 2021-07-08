@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <React.Fragment>
       <ScrollToTop />
-      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Sidebar toggle={toggle} isOpen={isOpen} />
       <Navbar toggle={toggle} {...logoNavND} />
       <HeroSection />
       <About />

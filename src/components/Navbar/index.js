@@ -55,7 +55,7 @@ const Navbar = ({ toggle, img, alt }) => {
                   duration={1000}
                   spy={true}
                   exact="true"
-                  offset={-80}
+                  // offset={100}
                 >
                   about
                 </NavLinks>
@@ -67,7 +67,7 @@ const Navbar = ({ toggle, img, alt }) => {
                   duration={1000}
                   spy={true}
                   exact="true"
-                  offset={-80}
+                  offset={-125}
                 >
                   skills
                 </NavLinks>
@@ -91,7 +91,7 @@ const Navbar = ({ toggle, img, alt }) => {
                   duration={1000}
                   spy={true}
                   exact="true"
-                  offset={-80}
+                  offset={-100}
                 >
                   projects
                 </NavLinks>

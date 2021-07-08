@@ -9,7 +9,7 @@ export const ProjectsContainer = styled.section`
   margin-bottom: 200px;
 
   @media screen and (max-width: 768px) {
-    padding: 100px 0;
+    margin-bottom: 100px;
   }
 `;
 

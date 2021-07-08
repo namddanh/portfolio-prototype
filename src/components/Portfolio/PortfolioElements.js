@@ -5,8 +5,8 @@ export const PortfolioContainer = styled.section`
   background-color: #151515;
   margin-bottom: 200px;
 
-  @media (max-width: 850px) {
-    margin-bottom: 0;
+  @media (max-width: 768px) {
+    margin-bottom: 100px;
   }
 `;
 
@@ -23,6 +23,10 @@ export const PortfolioWrapper = styled.div`
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
+
+  @media screen and (max-width: 700px) {
+    padding: 0 15px;
+  }
 `;
 
 export const ResumeDisplayAndController = styled.div`

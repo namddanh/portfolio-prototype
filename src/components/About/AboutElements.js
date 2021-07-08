@@ -5,6 +5,11 @@ export const AboutSection = styled.section`
   width: 100%;
   background-color: #151515;
   position: relative;
+  margin-bottom: 200px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 100px;
+  }
 `;
 
 export const ShadowEffect = styled.div`
@@ -63,7 +68,7 @@ export const AboutContent = styled.div`
   margin-right: 2rem;
 
   @media (max-width: 850px) {
-    margin: 1rem;
+    margin: 0rem;
   }
 `;
 
@@ -101,7 +106,7 @@ export const AboutImageContainer = styled.div`
   justify-content: center;
 
   @media (max-width: 850px) {
-    margin: 1rem;
+    margin: 0rem;
   }
 `;
 
@@ -110,6 +115,10 @@ export const AboutImage = styled.img`
 
   @media (max-width: 850px) {
     width: 50%;
+  }
+
+  @media (max-width: 600px) {
+    width: 75%;
   }
 
   @media (max-width: 520px) {
