@@ -103,6 +103,7 @@ export const AboutImageContainer = styled.div`
   margin-left: 2rem;
   display: flex;
   justify-content: center;
+  max-height: 666px;
   max-width: 500px;
 
   @media (max-width: 850px) {
