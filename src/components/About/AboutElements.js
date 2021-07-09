@@ -112,6 +112,7 @@ export const AboutImageContainer = styled.div`
 `;
 
 export const AboutImage = styled.img`
+  object-fit: cover; // Added for other browsers
   width: 100%;
   height: auto;
 
