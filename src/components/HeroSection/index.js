@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 // import heroImage from "../../images/pexels/pexels-joão-jesus-cut.jpg";
-// import Video from "../../videos/static-video-hs.mp4";
 // import mountain1Img from "../../images/parallaxHS/img/mountain1.png";
 // import mountain2Img from "../../images/parallaxHS/img/mountain2.png";
 // import mountain3Img from "../../images/parallaxHS/img/mountain3.png";
@@ -42,7 +41,6 @@ const HeroSection = () => {
   return (
     <HeroContainer id="home">
       <HeroBg>
-        {/* <VideoBg id="hero" autoPlay loop muted src={Video} type="video/mp4" /> */}
         <ImageMountain
           src={mountainImg}
           style={{ transform: `translateY(${offsetY * 0.25}px)` }}

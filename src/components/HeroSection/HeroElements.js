@@ -162,8 +162,13 @@ export const ImageSky = styled.img`
 
 export const ImageMountain = styled.img`
   position: absolute;
-  bottom: 0;
-  width: 2000px;
+  bottom: -150px;
+  width: 2600px;
   right: 0;
   z-index: 16;
+
+  @media screen and (max-width: 2000px) {
+    bottom: 0;
+    width: 2000px;
+  }
 `;

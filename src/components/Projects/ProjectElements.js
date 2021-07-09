@@ -6,7 +6,7 @@ export const ProjectsContainer = styled.section`
   justify-content: center;
   align-items: center;
   background-color: #151515;
-  margin-bottom: 200px;
+  margin-bottom: 280px;
 
   @media screen and (max-width: 768px) {
     margin-bottom: 100px;
